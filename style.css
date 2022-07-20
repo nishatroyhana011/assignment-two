@@ -9,60 +9,120 @@ h1 {
     color: #FFFFFF;
 }
 
-p {
+h3{
+    margin-left: 15px;
+    font-weight: 500;
+font-size: 16px;
 
+color: #161616;
+}
+
+
+p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
 }
 
+/* ================banner part=============== */
+
 header {
     display: flex;
     background-image: linear-gradient(to bottom left, rgb(28, 1, 1), rgb(6, 6, 138));
     margin: 50px 80px;
     border-radius: 25px;
-    
     box-sizing: border-box;
 }
 
-.banner-description{
+.banner-description {
     width: 50%;
     padding: 70px;
 }
+
 .banner-img {
     width: 50%;
 }
-.btn-active{ 
-padding: 16px 25px;
-margin-top: 25px;
-width: 187px;
-height: 56px;
-background: #dd0034;
-color: #FFFFFF;
-font-size: 20px;
-border: 0;
-border-radius: 5px;
+
+.btn-active {
+    padding: 16px 25px;
+    margin-top: 25px;
+    background: #dd0034;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
 }
-.fa-circle-arrow-right{
+.btn-normal {
+    padding: 16px 25px;
+    margin-top: 25px;
+    background: #ffffff;
+    color: #161616;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.fa-circle-arrow-right {
     margin-left: 20px;
 }
-.banner-img img{
-margin: 0 auto;
 
+.banner-img img {
+    margin: 0 auto;
 }
-main{
+
+/* ================main part=============== */
+main {
     display: flex;
-    margin: 50px 80px;
+    margin: 100px 80px;
+    gap: 20px;
 }
-aside{
-    width: 350px;
+
+aside {
+    width: 300px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
     background: #161616;
-border-radius: 10px;
+    border-radius: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: calc(100% - 250px);
+}
+article{
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+}
+article img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.article-btn{
+    margin: 12px 0 0 15px;
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    color: #161616;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.article-description{
+    padding: 0 0 10px 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(90, 86, 86);
+}
+.fa-message{
+    margin-left: 20px;
 }
