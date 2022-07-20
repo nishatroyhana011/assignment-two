@@ -10,15 +10,16 @@ h1 {
     color: #FFFFFF;
 }
 
-h2{
+h2 {
     font-weight: 600;
-font-size: 30px;
-line-height: 60px;
-text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
+
 h3 {
     margin-left: 15px;
     font-weight: 500;
@@ -61,7 +62,7 @@ header {
     color: #FFFFFF;
     font-size: 20px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .btn-normal {
@@ -71,7 +72,7 @@ header {
     color: #161616;
     font-size: 20px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .fa-circle-arrow-right {
@@ -143,26 +144,169 @@ article img {
 .fa-message {
     margin-left: 20px;
 }
+.view{
+    display: none;
+}
 
-/* ================main part=============== */
-footer{
-padding: 80px 100px ;
-box-sizing: border-box;
+/* ================footer part=============== */
+footer {
+    padding: 80px 100px;
+    box-sizing: border-box;
     width: 100%;
     bottom: 0;
     background-color: #161616;
     color: #B9B9B9;
     font-size: 15px;
 }
-.list{
+
+.list {
     border-top: 1px solid #594c4c;
     padding-top: 30px;
     color: #B9B9B9;
 }
-ul{
+
+ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-ul li{
+
+ul li {
     list-style: none;
+}
+.social{
+    margin-top: 50px;
+    text-align: center;
+}
+.fa-brands{
+    margin: 0 10px;
+}
+
+/* ================media query=============== */
+
+/* for tablet device */
+
+@media screen and (min-width: 688px) and (max-width: 992px) {
+    header{
+        margin: 50px;
+    }
+    .banner-description{
+        padding: 70px 20px;
+    }
+    
+    h1{
+        font-size: 35px;
+    }
+    .banner-img img{
+        width: 90%;
+    }
+    main{
+        flex-direction: column;
+        margin: 50px;
+    }
+    aside{
+        margin: 0 auto;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+    }
+    .buttons{
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn-active {
+        width: 180px;
+        height: 70px;
+    }
+    .btn-normal {
+        height: 70px;
+        border: 2px solid #B9B9B9;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+   article:last-child{
+        display: none;
+    }
+    .view{
+        margin: auto;
+        display: inline;
+    }
+}
+/* for mobile device */
+@media screen and (max-width: 687px) {
+    header {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .banner-description,
+    .banner-img {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+    #banner-text{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .banner-img img{
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    aside {
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .buttons {
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .btn-normal {
+        border: 2px solid #B9B9B9;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    .list ul{
+        margin: 20px 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .list ul li{
+        margin: 10px 0;
+    }
+    .fa-brands{
+        margin: 0 10px;
+    }
 }
