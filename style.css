@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -9,12 +10,21 @@ h1 {
     color: #FFFFFF;
 }
 
-h3{
+h2{
+    font-weight: 600;
+font-size: 30px;
+line-height: 60px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+h3 {
     margin-left: 15px;
     font-weight: 500;
-font-size: 16px;
+    font-size: 16px;
 
-color: #161616;
+    color: #161616;
 }
 
 
@@ -29,7 +39,7 @@ p {
 
 header {
     display: flex;
-    background-image: linear-gradient(to bottom left, rgb(28, 1, 1), rgb(6, 6, 138));
+    background-image: linear-gradient(to bottom left, rgb(28, 1, 1), rgb(30, 30, 108));
     margin: 50px 80px;
     border-radius: 25px;
     box-sizing: border-box;
@@ -53,6 +63,7 @@ header {
     border: 0;
     border-radius: 5px;
 }
+
 .btn-normal {
     padding: 16px 25px;
     margin-top: 25px;
@@ -91,21 +102,25 @@ aside {
     background: #161616;
     border-radius: 10px;
 }
-section{
+
+section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: calc(100% - 250px);
 }
-article{
+
+article {
     border-radius: 10px;
     border: 1px solid gainsboro;
 }
-article img{
+
+article img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-.article-btn{
+
+.article-btn {
     margin: 12px 0 0 15px;
     width: 100px;
     height: 32px;
@@ -115,7 +130,8 @@ article img{
     border-radius: 5px;
     background-color: #ffffff;
 }
-.article-description{
+
+.article-description {
     padding: 0 0 10px 15px;
     display: flex;
     gap: 10px;
@@ -123,6 +139,30 @@ article img{
     font-size: 14px;
     color: rgb(90, 86, 86);
 }
-.fa-message{
+
+.fa-message {
     margin-left: 20px;
+}
+
+/* ================main part=============== */
+footer{
+padding: 80px 100px ;
+box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    background-color: #161616;
+    color: #B9B9B9;
+    font-size: 15px;
+}
+.list{
+    border-top: 1px solid #594c4c;
+    padding-top: 30px;
+    color: #B9B9B9;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
 }
