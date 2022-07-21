@@ -49,7 +49,8 @@ header {
     width: 50%;
     padding: 60px;
 }
-.banner-description a{
+
+.banner-description a {
     display: inline-block;
     margin-top: 20px;
 }
@@ -61,13 +62,22 @@ header {
 .btn-active {
     padding: 16px 25px;
     margin-top: 25px;
-    background: #dd0034;
+    background: #dd0051;
     color: #FFFFFF;
     font-size: 20px;
     border: 0;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
+}
+
+#banner-btn {
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+#banner-btn:hover {
+    transform: scale(1.2);
 }
 
 .btn-normal {
@@ -88,6 +98,12 @@ header {
 
 .banner-img img {
     margin: 0 auto;
+    opacity: 70%;
+}
+
+.banner-img img:hover {
+    opacity: 100%;
+    transition: opacity .5s;
 }
 
 /* ================main part=============== */
@@ -108,7 +124,7 @@ aside {
     width: 250px;
     height: 250px;
     padding: 20px;
-    background: #161616;
+    background-image: linear-gradient(to bottom left, rgb(28, 1, 1), rgb(30, 30, 108));
     border-radius: 10px;
 }
 
@@ -152,35 +168,41 @@ article img {
 .fa-message {
     margin-left: 20px;
 }
-.view{
+
+.view {
     display: none;
 }
 
 /* ================match part=============== */
-.matches{
+.matches {
     border-radius: 10px;
     border: 1px solid gainsboro;
 }
-.match{
+
+.match {
     padding: 25px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     text-align: center;
 }
-.match span{
+
+.match span {
     margin: 0 10px;
 }
-.match img{
-    width: 100%;
+
+.match img {
+    width: 95%;
     border-radius: 0;
 }
-.match-name{
+
+.match-name {
     margin: 5px;
     font-size: 18px;
     text-align: center;
 }
-.match-time{
+
+.match-time {
     color: #B9B9B9;
     text-align: center;
 }
@@ -191,7 +213,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     bottom: 0;
-    background-color: #161616;
+    background-image: linear-gradient(to bottom left, rgb(28, 1, 1), rgb(30, 30, 108));
     color: #B9B9B9;
     font-size: 15px;
 }
@@ -211,13 +233,14 @@ ul {
 
 ul li {
     list-style: none;
-    
 }
-.social{
+
+.social {
     margin-top: 50px;
     text-align: center;
 }
-.fa-brands{
+
+.fa-brands {
     margin: 0 10px;
     color: #B9B9B9;
 }
@@ -227,30 +250,35 @@ ul li {
 /* for tablet device */
 
 @media screen and (min-width: 688px) and (max-width: 992px) {
-    header{
+    header {
         margin: 50px;
     }
-    .banner-description{
+
+    .banner-description {
         padding: 70px 20px;
     }
-    
-    h1{
+
+    h1 {
         font-size: 35px;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 90%;
     }
-    main{
+
+    main {
         flex-direction: column;
         margin: 50px;
     }
-    aside{
+
+    aside {
         margin: 0 auto;
         width: 100%;
         height: 80px;
         text-align: center;
     }
-    .buttons{
+
+    .buttons {
         margin: 0;
         width: 100%;
         height: 80px;
@@ -258,14 +286,17 @@ ul li {
         flex-direction: row;
         justify-content: space-around;
     }
+
     .btn-active {
         width: 180px;
         height: 40px;
     }
+
     .btn-normal {
         height: 40px;
         border: 2px solid #B9B9B9;
     }
+
     section {
         margin-top: 100px;
         display: grid;
@@ -273,14 +304,17 @@ ul li {
         gap: 20px;
         width: 100%;
     }
-   article:last-child{
+
+    article:last-child {
         display: none;
     }
-    .view{
+
+    .view {
         margin: auto;
         display: inline;
     }
 }
+
 /* for mobile device */
 @media screen and (max-width: 687px) {
     header {
@@ -298,16 +332,16 @@ ul li {
 
     h1 {
         font-size: 30px;
-
     }
-    #banner-text{
+
+    #banner-text {
         display: block;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 90%;
     }
 
@@ -334,19 +368,23 @@ ul li {
         grid-template-columns: 1fr;
         width: 100%;
     }
-    footer{
+
+    footer {
         text-align: center;
     }
-    .list ul{
+
+    .list ul {
         margin: 20px 0;
         padding: 0;
         flex-direction: column;
         justify-content: center;
     }
-    .list ul li{
+
+    .list ul li {
         margin: 10px 0;
     }
-    .fa-brands{
+
+    .fa-brands {
         margin: 0 10px;
     }
 }
